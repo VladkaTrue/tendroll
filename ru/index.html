@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tendroll — разбор фотоплёнки по одному фото</title><meta name="description" content="Свайп — оставить, убрать, в избранное или в альбом. Бесплатно, без рекламы и подписки. Фото не покидают ваш iPhone.">
+<meta property="og:title" content="Tendroll — разбор фотоплёнки по одному фото"><meta property="og:description" content="Свайп — оставить, убрать, в избранное или в альбом. Бесплатно, без рекламы и подписки. Фото не покидают ваш iPhone.">
+<meta property="og:image" content="../assets/og.png"><meta name="theme-color" content="#6b3fd1">
+<link rel="icon" href="../assets/icon-180.png"><link rel="apple-touch-icon" href="../assets/icon-180.png">
+<link rel="alternate" hreflang="en" href="../">
+<link rel="stylesheet" href="../assets/tokens.css"><style>
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--color-bg);color:var(--color-text);font:var(--text-body)/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif}
+a{color:var(--color-accent)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;gap:10px;align-items:center;font-weight:700;font-size:19px;color:var(--color-text);text-decoration:none}
+.brand img{width:34px;height:34px;border-radius:9px}
+.lang{font-size:15px;color:var(--color-text-muted);text-decoration:none}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:40px 0 64px}
+.hero h1{font-size:clamp(34px,5vw,54px);line-height:1.08;margin:0 0 18px;letter-spacing:-.02em}
+.hero p{font-size:19px;color:var(--color-text-muted);margin:0 0 28px;max-width:34em}
+.btn{display:inline-block;background:var(--color-accent);color:var(--color-on-accent);padding:15px 26px;border-radius:999px;font-weight:600;text-decoration:none}
+.btn.muted{background:var(--color-surface-2);color:var(--color-text)}
+.shot{width:100%;max-width:340px;justify-self:center;border-radius:44px;box-shadow:0 30px 80px rgba(60,30,120,.25)}
+section{padding:56px 0;border-top:1px solid var(--color-border)}
+h2{font-size:clamp(26px,3.4vw,34px);margin:0 0 22px;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--color-surface);border-radius:22px;padding:22px}
+.card h3{margin:0 0 6px;font-size:18px}.card p{margin:0;color:var(--color-text-muted)}
+ol.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s}
+ol.steps li{counter-increment:s;background:var(--color-surface);border-radius:22px;padding:22px}
+ol.steps li::before{content:counter(s);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--color-accent);color:var(--color-on-accent);font-weight:700;margin-bottom:10px}
+ol.steps b{display:block;margin-bottom:4px}
+.problem p{font-size:19px;color:var(--color-text-muted);max-width:40em}
+.price{text-align:center}.price p{color:var(--color-text-muted)}
+details{background:var(--color-surface);border-radius:16px;padding:16px 20px;margin-bottom:10px}
+summary{font-weight:600;cursor:pointer}details p{margin:10px 0 0;color:var(--color-text-muted)}
+.final{text-align:center}
+footer{padding:28px 0 48px;color:var(--color-text-muted);font-size:15px;display:flex;gap:18px;flex-wrap:wrap}
+footer a{color:var(--color-text-muted)}
+.doc{max-width:720px;padding-bottom:60px}.doc h1{font-size:34px}.doc p{margin:0 0 16px}
+@media (max-width:820px){.hero{grid-template-columns:1fr;padding-top:16px}.grid,ol.steps{grid-template-columns:1fr}.shot{max-width:280px}}
+</style></head>
+<body><div class="wrap"><header class="top"><a class="brand" href="./"><img src="../assets/icon-180.png" alt="">Tendroll</a>
+<a class="lang" href="../" hreflang="en">English</a></header>
+<main>
+<div class="hero"><div><h1>Ваша фотоплёнка — по одному фото.</h1><p>Свайп — оставить, убрать, в избранное или в альбом. Бесплатно, без рекламы и подписки. Фото не покидают ваш iPhone.</p><span class="btn muted">Скоро в App Store</span></div>
+<img class="shot" src="../assets/shot-ru.png" alt="Экран разбора Tendroll: карточка фото с кнопками «в корзину», «в избранное», «оставить» и панелью альбомов"></div>
+<section class="problem"><h2>Чистка фото не должна быть борьбой</h2><p>Многие «чистилки» показывают рекламу каждые несколько свайпов или просят еженедельную оплату, прежде чем дать разобрать старые фото.</p><p>Некоторые теряют прогресс при закрытии или говорят, что фото удалены, когда это не так.</p></section>
+<section><h2>Как это работает</h2><ol class="steps"><li><b>Разрешите доступ к «Фото»</b>Без аккаунта. Ничего не загружается.</li><li><b>Свайпайте</b>Вверх — в корзину, вниз — в избранное, вправо — оставить. Или нажмите на альбом, чтобы переложить фото туда.</li><li><b>Очистите корзину, когда будете готовы</b>Tendroll проверит медиатеку и скажет, сколько фото действительно удалено.</li></ol></section>
+<section><h2>Для больших медиатек</h2><div class="grid"><div class="card"><h3>Бесплатно. Без рекламы. Без подписки.</h3><p>Всё открыто для всех.</p></div><div class="card"><h3>Любой порядок</h3><p>Новые, старые или вразнобой. По месяцам с прогрессом — или только снимки экрана, видео, Live Photos, селфи.</p></div><div class="card"><h3>Удаление, которое можно проверить</h3><p>«Удалено 120 из 120». Передумали — верните; iOS тоже хранит фото 30 дней.</p></div><div class="card"><h3>Ничего не теряется</h3><p>Каждое решение сохраняется сразу. Вернитесь через неделю и продолжите с того же места.</p></div><div class="card"><h3>Альбомы без поиска</h3><p>Закрепите нужные, создайте альбом и переложите фото за один шаг, ищите по всем.</p></div><div class="card"><h3>Похожие кадры и дубликаты</h3><p>Находятся прямо на iPhone. Tendroll подскажет лучший кадр, а решаете вы.</p></div><div class="card"><h3>Тихо</h3><p>Видео и Live Photos не играют звук, пока вы разбираете.</p></div><div class="card"><h3>Приватно</h3><p>Без аккаунта, загрузок и слежки.</p></div><div class="card"><h3>И на iPad</h3><p>Альбомы рядом с фото и клавиши: стрелки для решений, 1–9 — в альбом.</p></div></div></section>
+<section class="price"><h2>Бесплатно. Всё включено.</h2><p>Без рекламы, подписки и дневных лимитов.</p><p>Если Tendroll сэкономил вам время, можно сказать спасибо — по желанию, это ничего не открывает.</p><p><a class="btn muted" href="https://boosty.to/vladislove_online/donate">Поблагодарить</a></p></section>
+<section><h2>Вопросы</h2><details><summary>Правда бесплатно? В чём подвох?</summary><p>Подвоха нет: ни рекламы, ни подписки, ни слежки.</p></details><details><summary>Фото уходят с телефона?</summary><p>Нет. Tendroll работает только на устройстве. Нет ни аккаунта, ни сервера.</p></details><details><summary>Удаляет ли он что-то без спроса?</summary><p>Нет. Смахнутые вверх фото ждут в корзине Tendroll. Удаление подтверждается в iOS, а iOS ещё 30 дней хранит их в «Недавно удалённых».</p></details><details><summary>Что, если приложение закроется посреди разбора?</summary><p>Вы продолжите ровно с того же места.</p></details><details><summary>Работает с «Фото iCloud»?</summary><p>Да, включая фото, которые хранятся только в iCloud.</p></details><details><summary>Можно дать доступ только к части фото?</summary><p>Да. Тогда Tendroll видит только выбранные фото, а добавить ещё можно в любой момент.</p></details><details><summary>Какие языки?</summary><p>Русский и английский.</p></details></section>
+<section class="final"><h2>Разберите фотоплёнку в эти выходные.</h2><span class="btn muted">Скоро в App Store</span></section>
+</main>
+<footer><span>© 2026 Tendroll</span><a href="https://apps.vladislove.online/">Приложения</a><a href="privacy.html">Конфиденциальность</a><a href="terms.html">Условия</a><a href="support.html">Поддержка</a></footer>
+</div></body></html>
